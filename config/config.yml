@@ -1,0 +1,19 @@
+---
+db:
+    host: ttm_backend_db
+    name: ttm_backend
+    password: ttm_backend
+    port: 5432
+    user: ttm_backend
+infra:
+    service_name: backend
+log:
+    level: info
+    output: stdout
+port:
+    api: 8000
+tracer:
+    agent_address: 127.0.0.1:6831
+    sampler:
+        param: 1
+        type: const
